@@ -9,13 +9,14 @@ public class SeleniumTest {
     public static void main(String[] args) {
 
         //setting up the web driver manager
+        //we create our "Browser Driver"
         WebDriverManager.chromedriver().setup();
 
         //create instance of the chrome driver
         WebDriver driver=new ChromeDriver();
 
         //
-        driver.get("https://www.youtube.com");
+        driver.get("https://www.facebook.com");
     }
 
 }
