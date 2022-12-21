@@ -19,8 +19,17 @@ public class T4_LibraryLoginPage {
         userNameInput.sendKeys("incorrect@email.com");
 
         //enter password: incorrect password
+        WebElement passwordInput=driver.findElement(By.id("inputPassword"));
+        passwordInput.sendKeys("incorrect password");
 
         //click to sign in button
+        WebElement signInButton=driver.findElement(By.tagName("button"));
+        signInButton.click();
+
+
+
+
+
 
 
 
