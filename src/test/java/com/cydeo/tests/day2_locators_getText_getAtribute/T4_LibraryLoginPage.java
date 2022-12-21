@@ -26,6 +26,15 @@ public class T4_LibraryLoginPage {
         WebElement signInButton=driver.findElement(By.tagName("button"));
         signInButton.click();
 
+        //verify visually "Sorry, Wrong Email or Password"
+        WebElement message=driver.findElement(By.className("alert alert-danger"));
+        String expectedMessage="Sorry, Wrong Email or Password";
+        String actualMessage= message.getText();
+        if (actualMessage.equals(expectedMessage))
+            System.out.println("Message verification PASS");
+        else
+            System.out.println("Message verification FAIL");
+
 
 
 
