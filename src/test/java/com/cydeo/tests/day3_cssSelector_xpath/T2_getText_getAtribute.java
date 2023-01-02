@@ -20,8 +20,9 @@ public class T2_getText_getAtribute {
 
         if (actualRememberMeLabel.equals(expectedRememberMeLabel))
             System.out.println("Label verification PASS");
-        else
+        else {
             System.out.println("Label verification FAIL");
+        }
 
         WebElement forgotPasswordLink = driver.findElement(By.className("login-link-forgot-pass"));
         String expectedForgotPasswordLinkText="Forgot your password?";
@@ -46,4 +47,5 @@ public class T2_getText_getAtribute {
 
 
     }
-}
+        }
+

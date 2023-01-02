@@ -1,6 +1,7 @@
 package com.cydeo.tests.day1_selenium_intro;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -16,7 +17,8 @@ public class SeleniumTest {
         WebDriver driver=new ChromeDriver();
 
         //
-        driver.get("https://www.facebook.com");
+        driver.get("D:\\BITEN KURSLAR- SINAVLAR\\VAHAP+FORM\\vahap video");
+        driver.findElement(By.xpath("//a[@class='icon file']")).click();
     }
 
 }
