@@ -14,7 +14,7 @@ public class T5_WindowsPractice {
         driver= WebDriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://practice.cydeo.com/iframe");
+        driver.get("https://practice.cydeo.com/windows");
     }
     //@Ignore
     @Test
